@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Racing Game</title>
+  <link rel="stylesheet" href="cor.css">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Tela inicial -->
+    <div id="modeSelection">
+      <h1>Car Racing Game</h1>
+      <p>Escolha o modo de jogo:</p>
+      <button id="singleplayerBtn" class="modeBtn">Singleplayer</button>
+      <button id="multiplayerBtn" class="modeBtn">Multiplayer</button>
+    </div>
+
+    <!-- Tela do jogo -->
+    <div id="gameScreen" style="display: none;">
+      <h1>Car Racing Game</h1>
+      <p id="instructions">Player 1: W, A, S, D | Player 2: Setas</p>
+      <button id="startBtn" class="gameBtn">Iniciar Corrida</button>
+      <div id="gameArea">
+        <div id="player1" class="car"></div>
+        <div id="player2" class="car"></div>
+      </div>
+      <div id="results" style="display: none;">
+        <h2 id="winnerText"></h2>
+        <button id="restartBtn" class="gameBtn">Reiniciar</button>
+      </div>
+    </div>
+  </div>
+  <script src="cor.js"></script>
+</body>
+</html>

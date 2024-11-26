@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e2f;
+  color: #fff;
+  text-align: center;
+}
+
+.game-container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #ff8c00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+}
+
+#start-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ff8c00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#start-btn:hover {
+  background-color: #e07b00;
+}
+
+#score {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#game-area {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  background-color: #1e1e2f;
+  border: 2px solid #ff8c00;
+  position: relative;
+  overflow: hidden;
+}
+
+.target {
+  width: 40px;
+  height: 40px;
+  background-color: #ff8c00;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}

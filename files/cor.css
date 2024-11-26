@@ -1,0 +1,105 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .game-container {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #ff8c00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  p {
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  /* Botões do modo de jogo */
+  .modeBtn {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .modeBtn:hover {
+    background-color: #e07b00;
+    transform: scale(1.05);
+  }
+  
+  /* Botões do jogo */
+  .gameBtn {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .gameBtn:hover {
+    background-color: #e07b00;
+    transform: scale(1.05);
+  }
+  
+  /* Pista */
+  #gameArea {
+    width: 1000px;
+    height: 300px;
+    margin: 20px auto;
+    position: relative;
+    border: 2px solid #ff8c00;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  
+  .obstacle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: red; 
+    border-radius: 50%; 
+  }
+  
+  /* corredores */
+  #player1 {
+    width: 40px;
+    height: 60px;
+    background-color: #ff8c00;
+    position: absolute;
+    bottom: 10px;
+  }
+  
+  #player2 {
+    width: 40px;
+    height: 60px;
+    background-color: #008CFF; 
+    position: absolute;
+    bottom: 10px; 
+  }
+
+  /* Linha de chegada */
+  .finish-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 10px;
+    background-color: #ff8c00;
+  }
+  

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1e1e2f;
+    color: #fff;
+    margin: 0;
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #ff8c00;
+}
+
+.container {
+    text-align: center;
+    background-color: #2a2a40;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.multiplicador {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.barra {
+    width: 80%;
+    height: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+
+.progresso {
+    height: 100%;
+    width: 0;
+    background-color: #4CAf50;
+    transition: width 0.2s ease-in-out; 
+}
+
+input [type ="number"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ff8c00;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #e07a00;
+}
